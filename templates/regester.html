@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="post" action="{{url_for("regester")}}">
+    <p>
+        <label for="email">Email</label>
+        <input type="text" 
+               placeholder="Your email">
+        </input>
+    </p>
+    <p>
+        <label for="password">Password</label>
+        <input type="password"
+               placeholder="Password">
+        </input>
+    </p>
+    <p>
+        <label for="name">Name</label>
+        <input type="text" 
+               placeholder="Name">
+        </input>
+    </p> 
+       
+    </button>
+    <button type="submit" class="regester" value="regester">
+        <a href="/">Regester</a>
+        
+    </button>
+
+</form>
+
+
+{% endblock  %}
+

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="post" action="/">
+    <p>
+        <label for="email">Email</label>
+        <input type="text" name="email"
+               placeholder="Your email">
+        </input>
+    </p>
+    <p>
+        <label for="password">Password</label>
+        <input type="password" name="password"
+               placeholder="Password">
+        </input>
+    </p>
+    <!-- <p>
+        <label for="Name">Name</label>
+        <input type="text" name="Name"
+               placeholder="Name">
+        </input>
+    </p> -->
+    <button class="login" value="login">
+        <a href="/login">Login</a>
+        
+    </button>
+    <button class="regester" value="regester">
+        <a href="/regester">Regester</a>
+        
+    </button>
+
+</form>
+
+
+{% endblock  %}
